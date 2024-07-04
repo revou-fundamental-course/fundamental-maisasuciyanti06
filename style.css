@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Advent Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+background-color: lightpink;
+position: fixed;
+}
+.navbar .container{
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+div .logo h1{
+    color: lightseagreen;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 0px 10px;
+}
+.hero{
+    background-color: rgba(245, 157, 172, 0.788);
+}
+.hero img{
+    margin-top: 60px;
+    border-radius: 50%;
+}
+.jumbotron{
+    padding:2rem;
+    color: black;
+    justify-content: center;
+}
+.jumbotron h1{
+    font-family: 'DM Serif Display', serif;
+    font-size: 25px;
+    padding: 5px;
+}
+.jumbotron p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.about{
+    background-color: rgb(226, 153, 164);
+}
+.about .grid-container {
+    margin-top: 10px;
+    width: 800px;
+    display: grid;
+    grid: 100px / auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.about .grid-container {
+    margin-top: 10px;
+    width: 800px;
+    display: grid;
+    grid: 100px / auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.about .grid-container .grid{
+    text-align: center;
+    font-size: 15px;
+}
+.work{
+    background-color: rgb(231, 137, 137);
+}
+.work .jumbotron .work-list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+}
+.work .jumbotron .work-list .work-details{
+    margin-top: 30px;
+    list-style: none;
+}
+.work .jumbotron .work-list .work-details a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+.skill{
+    background-color: rgb(231, 137, 137);
+    color: black;
+}
+.skill .grid-container {
+    margin-top: 10px;
+    width: 800px;
+    display: grid;
+    grid: 100px / auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.skill .grid-container .grid{
+    text-align: center;
+    font-size: 15px;
+}
+.footer{
+background-color:rgb(231, 137, 137) ;
+color: black;
+display: flex;
+justify-content: center;
+padding-bottom: 2rem;
+}
