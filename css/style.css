@@ -1,0 +1,325 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oxygen:wght@300;400;700&family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Display:ital@0;1&family=Oxygen:wght@300;400;700&family=Playwrite+MX:wght@100..400&display=swap');
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Playwrite MX',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Mengatur elemen di tengah secara horizontal */
+    align-items: center; /* Mengatur elemen di tengah secara vertikal */
+    margin: 0;
+    padding: 0;
+    background-color:rgb(235, 52, 165);/* Warna latar belakang */
+    color: whitesmoke; /* Warna teks */
+}
+
+header img {
+    width: 100px; /* Sesuaikan ukuran lebar sesuai kebutuhan */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 50%;
+    
+}
+
+/* Body styles */
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-image: url('/fundamental-maisasuciyanti06/img/bgg.jpg'); /* Path gambar background, sesuaikan dengan lokasi gambar Anda */
+    background-size: cover; /* Mengatur ukuran background agar mengisi area sepenuhnya */
+    background-position: center; /* Posisi background di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan background */
+    line-height: 1.6;
+    box-sizing: border-box; /* Pengaturan box-sizing untuk menghitung border dan padding */
+    margin: 0 auto; /* Mengatur margin secara otomatis atas dan bawah serta memusatkan horizontalnya */
+    
+}
+
+body .subjudul{
+    font-family: 'Oxygen',sans-serif;
+}
+/* Navbar styles */
+nav {
+    background-color:rgb(235, 52, 165);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2{
+    color: whitesmoke;
+    font-family: 'DM Serif Display',sans-serif;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: palevioletred;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(231, 99, 191, 0.479)
+}
+
+.logo-icon img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+}
+
+.container a {
+    margin-left: 15px;
+}
+
+.container a:first-child {
+    margin-left: 0;
+}
+
+/* Main section styles */
+main {
+    padding: 50px;
+    border: 50px;
+    content: 50px;
+    text-align: left; /* Memastikan konten di tengah */
+} 
+
+main section p#greeting{
+    font-family: 'Oxygen',sans-serif;
+    font-size: 30px;
+}
+
+main section img#banner{
+        width: 1240px; /* Sesuaikan ukuran lebar sesuai kebutuhan */
+        height: auto; /* Menjaga proporsi gambar */
+        display: flex; /* Menggunakan flexbox */
+        justify-content: center; /* Mengatur elemen di tengah secara horizontal */
+        align-items: center; /* Mengatur elemen di tengah secara vertikal */
+}
+
+/* Profile and Headquarters section */
+main section img#kantor {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Memastikan gambar tetap terlihat proporsional */
+    border-radius: 50%; /* Membuat sudut gambar melengkung */
+    display: block; /* Memastikan gambar muncul sebagai blok */
+    margin: 0 auto; /* Memposisikan gambar di tengah */
+}
+
+main .alamat{
+    text-align: center;
+}
+
+/* Gaya untuk bagian Portfolio */
+#our-portofolio {
+    padding: 20px;
+    text-align: center;
+}
+
+#our-portofolio h2.subjudul {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk setiap portofolio item */
+#porto1, #porto2, #porto3, #porto4 {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#porto1 img, #porto2 img, #porto3 img, #porto4 img {
+    max-width: 30%; /* Maksimum lebar gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#porto1 ul, #porto2 ul, #porto3 ul, #porto4 ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#porto1 ul li, #porto2 ul li, #porto3 ul li, #porto4 ul li {
+    margin-bottom: 10px;
+}
+
+#porto1 ul ul, #porto2 ul ul, #porto3 ul ul, #porto4 ul ul {
+    list-style-type: disc; /* Tipe daftar dalam sub-list */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#porto1 ul ul li, #porto2 ul ul li, #porto3 ul ul li, #porto4 ul ul li {
+    margin-bottom: 5px;
+}
+
+#porto2 p, #porto3 p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#porto4 ul {
+    text-align: center; /* Pusatkan daftar untuk elemen #porto4 */
+}
+
+#porto4 ul li {
+    text-justify: auto;
+    text-align: left; /* Pusatkan teks untuk elemen #porto4 */
+}
+
+/* Message Us section styles */
+/* Gaya untuk bagian Message Us */
+
+#our-message {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+#our-message h2 {
+    text-align: center;
+}
+#our-message table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#our-message td {
+    padding: 10px;
+    vertical-align: top;
+}
+#our-message input[type="text"],
+#our-message input[type="date"],
+#our-message textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#our-message textarea {
+    resize: vertical;
+}
+#our-message input[type="radio"] {
+    margin-right: 5px;
+}
+#form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#our-message button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+#our-message button:hover {
+    background-color: #45a049;
+}
+#result {
+    border: 1px solid #ccc;
+    height: 200px;
+    width: 400px;
+    display: inline-block;
+    margin-left: 120px;
+    vertical-align: middle;
+}
+/* Media Queries untuk Responsif */
+
+/* Tablet dan HP */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    nav {
+        display: block;
+        padding: 10px 0;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        padding: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    #banner {
+        width: 100%;
+    }
+    #kantor {
+        width: 100%;
+    }
+    .alamat {
+        text-align: center;
+    }
+    #porto1,
+    #porto2,
+    #porto3,
+    #porto4 {
+        display: block;
+        margin: 20px 0;
+    }
+    #porto1 img,
+    #porto2 img,
+    #porto3 img,
+    #porto4 img {
+        width: 100%;
+    }
+}
+
+/* HP */
+@media only screen and (max-width: 480px) {
+    nav {
+        padding: 5px 0;
+    }
+    nav a {
+        margin: 5px 0;
+        font-size: 0.9em;
+    }
+    .subjudul {
+        font-size: 1.2em;
+    }
+    #banner {
+        height: auto;
+    }
+    #kantor {
+        height: auto;
+    }
+    #porto1,
+    #porto2,
+    #porto3,
+    #porto4 {
+        display: block;
+        margin: 10px 0;
+    }
+}
